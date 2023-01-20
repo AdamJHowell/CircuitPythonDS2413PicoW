@@ -3,6 +3,11 @@ import board
 from adafruit_onewire.bus import OneWireBus
 import adafruit_ds2413
 
+"""
+pip install adafruit-circuitpython-onewire
+pip install adafruit-circuitpython-ds2413
+"""
+
 one_wire_bus = OneWireBus( board.GP2 )
 ds2413 = adafruit_ds2413.DS2413( one_wire_bus, one_wire_bus.scan()[0] )
 
